@@ -143,9 +143,6 @@ footer{
     .nav-toggle-label {
         display: none;
     }
-    nav{
-	background-image:none;
-    }
     header {
         display: flex;
         justify-content: space-between;
