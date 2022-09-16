@@ -1,0 +1,284 @@
+.first-section {
+    position: relative;
+    top: 65px;
+    width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(180deg, rgb(20,63,23), rgba(50,205,50,0.512), rgba(255,255,255,0.49)),url(../Images/background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+    color: white;
+}
+.first-section .content{
+	width: 75%;
+	padding-bottom: 25px;
+	text-align: center;
+	color: var(--light-text-color);
+}
+.first-section img{
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 18px;
+}
+.first-section .content h1{
+    font-size: var(--heading-size);
+}
+.first-section .stats{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.first-section .stats .stat{
+    width: 75%;
+    margin: 10px;
+    padding: 15px 30px;
+    background: rgba( 20, 63, 23, 0.75);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.40);
+    backdrop-filter: blur( 5px );
+    border-radius: 15px;
+    border: 1px solid var(--second-color);
+}
+.first-section .stats .stat h3{
+    font-size: var(--sub-heading-font);
+    color: var(--second-color);
+    text-shadow: 3px 3px 10px var(--second-color);
+}
+.first-section .stats .stat p{
+    font-size: var(--text-size);
+    color: var(--light-text-color);
+}
+.first-section .content a{
+    text-decoration: none;
+	color: var(--light-text-color);
+	font-size: var(--text-size);
+	font-weight: bold;
+	border-radius: 45px;
+	padding: 15px 20px;
+	background-color: var(--first-color);
+}
+.first-section .content a:hover{
+	letter-spacing: 3px;
+	background: var(--second-color);
+	color: var(--dark-text-color);
+	transition: 0.5s;
+}
+.second-section, .third-section, .fourth-section{
+    padding: 40px 8% 20px 8%;
+}
+.second-section{
+    position: relative;
+    margin-top: 60px;
+}
+.second-section h1, .third-section h1, .fourth-section h1{
+	font-size: var(--heading-size);
+	text-align: center;
+	color: var(--dark-text-color);
+	text-shadow: 3px 3px 10px var(--second-color);
+}
+.second-section .timeline{
+	margin: 45px auto;
+	width: 100%;
+	border-left: 2px solid var(--second-color);
+	padding: 0 20px 0 30px;
+}
+.second-section .timeline-content{
+	background-color: var(--first-color);
+	padding: 10px 25px;
+	font-size: var(--text-size);
+	border: 1px solid var(--second-color);
+	line-height: 1.7;
+	position: relative;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    flex-direction: column;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.second-section .timeline-content::before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: var(--first-color);
+	border: 3px solid var(--second-color);
+	position: absolute;
+	top: 10px;
+	left: -40px;
+}
+.second-section .timeline-content::after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent var(--second-color) transparent transparent ;
+	border-width: 8px;
+	position: absolute;
+	left: -17px;
+	top: 10px;
+}
+.second-section .timeline-content .text-content{
+	margin: 0;
+	color: var(--light-text-color);
+}
+.second-section .timeline-content .text-content h3{
+	font-size: var(--sub-heading-size);
+	color: var(--second-color);
+	text-shadow: 3px 3px 10px var(--second-color);
+}
+.second-section .timeline-content .text-content ul{
+	text-align: justify;
+	list-style-type: square;
+	font-size: var(--text-size);
+	padding: 15px 25px 15px 0;
+	margin-left: 30px;
+}
+.second-section .timeline-content .text-content ul ul{
+	list-style-type: disc;
+}
+.second-section .timeline-content img{
+	margin: 15px;
+	height: 150px;
+	border-radius: 15px;
+}
+.second-section .timeline-content:last-child img{
+    height: auto;
+    width: 200px;
+}
+
+.third-section .cards{
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-wrap: wrap;
+}
+.third-section .cards .card{
+	width: 100%;
+	margin: 15px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgba( 50, 205, 50, 0.75);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.40);
+    backdrop-filter: blur( 5px );
+	-webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: 1px solid var(--first-color);
+}
+.third-section .cards .card img{
+	width: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.third-section .cards .card h3{
+    margin: 5px 0;
+	font-size: var(--sub-heading-size);
+	color: var(--dark-text-color);
+	text-align: center;	
+}
+.third-section .cards .card ol{
+	color: var(--dark-text-color);
+	padding: 15px 25px 15px 0;
+	margin-left: 40px;
+}
+.third-section .cards .card ol li{
+	font-size: var(--text-size);
+	text-align: justify;
+}
+.third-section a{
+	text-decoration: none;
+	color: var(--light-text-color);
+	font-size: var(--text-size);
+	font-weight: bold;
+	border-radius: 45px;
+	padding: 15px 20px;
+	margin-bottom: 15px;
+	background: rgba( 20, 63, 23, 0.6);
+}
+.third-section a:hover{
+	letter-spacing: 3px;
+	text-shadow: 3px 3px 10px var(--light-text-color);
+	transition: 0.5s;
+}
+.fourth-section .content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+.fourth-section p{
+	margin: 10px 30px;
+	font-size: var(--text-size);
+	text-align: justify;
+}
+.fourth-section img{
+	margin: 10px 30px;
+    width: 75%;
+	border-radius: 5px;
+}
+@media only screen and (min-width: 650px) {
+	:root{
+        --heading-size: 40px;
+        --sub-heading-size: 22px;
+        --text-size: 14px;
+    }
+    .first-section img{
+        width: 120px;
+        margin-top: 25px;
+    }
+    .first-section .stats{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .first-section .stats .stat{
+        width: 40%;
+    }
+    .second-section .timeline-content:last-child img{
+        height: 150px;
+        width: auto;
+    }
+    .third-section .cards .card{
+        width: 40%;
+		margin: 15px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    :root{
+        --heading-size: 40px;
+        --sub-heading-size: 24px;
+        --text-size: 16px;
+    }
+    .first-section img{
+        width: 150px;
+        margin-top: 40px;
+    }
+    .first-section .stats .stat{
+        width: 20%;
+    }
+    .second-section .timeline{
+        width: 75%;
+    }
+    .second-section .timeline .timeline-content{
+        flex-direction: row;
+    }
+    .second-section .timeline .timeline-content .text-content ul{
+        margin-left: 40px;
+    }
+    .third-section .cards .card{
+        width: 30%;
+    }
+    .fourth-section .content{
+        flex-direction: row;
+    }
+    .fourth-section img{
+        width: 450px;
+    }
+}

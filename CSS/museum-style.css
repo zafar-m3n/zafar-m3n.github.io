@@ -1,0 +1,209 @@
+.first-section {
+    position: relative;
+    top: 65px;
+    width: 100%;
+    height: 65vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(180deg, rgb(20,63,23),rgba(20,63,23,0.65), rgba(30,28,24,0.49)),url(../Images/museum-building.jpg);
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+    color: var(--light-text-color);
+}
+.first-section .content{
+	width: 75%;
+    text-align: center;
+	padding-bottom: 25px;
+	color: var(--light-text-color);
+}
+.first-section img{
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 50%;
+}
+.first-section .content h1{
+    font-size: var(--heading-size);
+}
+.first-section .content p{
+    text-align: justify;
+}
+.first-section .content a{
+    text-decoration: none;
+	color: var(--light-text-color);
+	font-size: var(--text-size);
+	font-weight: bold;
+	border-radius: 45px;
+	padding: 15px 20px;
+	background-color: var(--first-color);
+}
+.first-section .content a:hover{
+	letter-spacing: 3px;
+	background: var(--second-color);
+	color: var(--dark-text-color);
+	transition: 0.5s;
+}
+.second-section, .third-section, .fourth-section{
+    padding: 40px 8% 20px 8%;
+}
+.second-section{
+    position: relative;
+    margin-top: 60px;
+}
+.second-section h1, .third-section h1, .fourth-section h1{
+	font-size: var(--heading-size);
+	text-align: center;
+	color: var(--dark-text-color);
+	text-shadow: 3px 3px 10px var(--second-color);
+}
+.second-section .timeline{
+	margin: 45px auto;
+	width: 100%;
+	border-left: 2px solid var(--second-color);
+	padding: 0 20px 0 30px;
+}
+.second-section .timeline-content{
+	background-color: var(--first-color);
+	padding: 10px 25px;
+	font-size: var(--text-size);
+	border: 1px solid var(--second-color);
+	line-height: 1.7;
+	position: relative;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    flex-direction: column;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.second-section .timeline-content::before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: var(--first-color);
+	border: 3px solid var(--second-color);
+	position: absolute;
+	top: 10px;
+	left: -40px;
+}
+.second-section .timeline-content::after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent var(--second-color) transparent transparent ;
+	border-width: 8px;
+	position: absolute;
+	left: -17px;
+	top: 10px;
+}
+.second-section .timeline-content .text-content{
+	margin: 0;
+	color: var(--light-text-color);
+}
+.second-section .timeline-content .text-content p{
+	font-size: var(--text-size);
+	text-align: justify;
+}
+.second-section .timeline-content img{
+	margin: 15px;
+	height: 150px;
+	border-radius: 15px;
+}
+.third-section .images{
+    margin: 20px;
+    column-count: 1;
+}
+.third-section .images img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid var(--second-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+	transition: .5s;
+}
+.third-section .images img:hover{
+	transform: matrix(1.1,0,0,1.1,5,5);
+}
+.fourth-section .content{
+	margin: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.fourth-section .content .map{
+	width: 100%;
+}
+.fourth-section .content .map iframe{
+	border: 0;
+	border-radius: 10px;
+	width: 100%;
+	margin: 5px 0;
+}
+.fourth-section .details{
+	width: 100%;
+	padding: 10px;
+	line-height: 30px;
+}
+.fourth-section .details p span{
+	font-weight: bold;
+	font-size: 16px;
+}
+.fourth-section .content .details .visit-btns{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+.fourth-section .content .details .visit-btns a{
+	background: var(--first-color);
+	color: var(--light-text-color);
+	text-align: center;
+	padding: 10px;
+	margin: 0 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: .5s;
+}
+.fourth-section .content .details .visit-btns a:hover{
+	background: var(--second-color);
+	color: var(--dark-text-color);
+}
+@media only screen and (min-width: 650px) {
+	:root{
+		--heading-size: 40px;
+        --sub-heading-size: 22px;
+        --text-size: 14px;
+    }
+	.third-section .images{
+		column-count: 2;
+	}
+}
+@media only screen and (min-width: 900px) {
+	:root{
+		--heading-size: 40px;
+        --sub-heading-size: 24px;
+        --text-size: 16px;
+    }
+	.third-section .images{
+		column-count: 4;
+	}
+	.fourth-section .content .map{
+		width: 50%;
+	}
+	.fourth-section .content .map iframe{
+		height: 300px;
+	}
+	.fourth-section .details{
+		width: 40%;
+		text-align: right;
+	}
+	.fourth-section .content .details .visit-btns{
+		justify-content: space-between;
+	}
+}

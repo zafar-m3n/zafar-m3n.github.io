@@ -1,0 +1,120 @@
+.first-section {
+  position: relative;
+  top: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.first-section .content {
+  width: 75%;
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--dark-text-color);
+}
+.first-section .content h1 {
+  font-size: var(--heading-size);
+  text-shadow: 3px 3px 10px var(--second-color);
+}
+.first-section .content p {
+  text-align: justify;
+}
+
+.second-section {
+  padding: 40px 8% 20px 8%;
+  position: relative;
+  margin-top: 60px;
+}
+.second-section h1 {
+  font-size: var(--heading-size);
+  text-align: center;
+  color: var(--dark-text-color);
+  text-shadow: 3px 3px 10px var(--second-color);
+}
+.second-section .content {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.second-section .content .details {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+.second-section .content .details p {
+  text-align: justify;
+}
+.second-section .content .product-image {
+  width: 100%;
+  text-align: center;
+}
+.second-section .content .product-image img {
+  border: 1px solid var(--dark-text-color);
+  border-radius: 10px;
+  width: 100%;
+  margin: 5px 0;
+}
+.second-section .content .details a {
+  text-decoration: none;
+  padding: 15px;
+  background: var(--first-color);
+  color: var(--light-text-color);
+  border-radius: 5px;
+  line-height: 3;
+  transition: 0.5s;
+}
+.second-section .content .details a:hover {
+  background: var(--second-color);
+  color: var(--light-text-color);
+}
+@media only screen and (min-width: 400px) {
+  :root {
+    --heading-size: 40px;
+    --sub-heading-size: 22px;
+    --text-size: 14px;
+  }
+  .second-section .content .product-image {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 650px) {
+  :root {
+    --heading-size: 40px;
+    --sub-heading-size: 22px;
+    --text-size: 14px;
+  }
+  .second-section .content .product-image img {
+    height: 250px;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  :root {
+    --heading-size: 40px;
+    --sub-heading-size: 24px;
+    --text-size: 16px;
+  }
+  .second-section .content:nth-of-type(even) {
+    flex-direction: row;
+  }
+  .second-section .content:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+  .second-section .content .details {
+    width: 65%;
+    text-align: justify;
+  }
+  .second-section .content .details h3 {
+    text-align: justify;
+  }
+  .second-section .content .product-image {
+    width: 25%;
+  }
+  .second-section .content .product-image img {
+    height: 100%;
+  }
+}

@@ -1,0 +1,272 @@
+.first-section {
+  position: relative;
+  top: 65px;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(
+      180deg,
+      rgb(20, 63, 23),
+      rgba(20, 63, 23, 0.512),
+      rgba(255, 255, 255, 0.49)
+    ),
+    url(../Images/plantation-background-5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  animation: change 30s ease infinite;
+}
+.first-section .content {
+  width: 75%;
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--light-text-color);
+}
+.first-section .content h1 {
+  font-size: var(--heading-size);
+}
+.first-section .content p {
+  text-align: justify;
+}
+.first-section .content a {
+  text-decoration: none;
+  color: var(--light-text-color);
+  font-size: var(--text-size);
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 15px 20px;
+  background-color: var(--first-color);
+}
+.first-section .content a:hover {
+  letter-spacing: 3px;
+  background: var(--second-color);
+  color: var(--dark-text-color);
+  transition: 0.5s;
+}
+.second-section,
+.third-section,
+.fourth-section {
+  padding: 40px 8% 20px 8%;
+}
+.second-section {
+  position: relative;
+  margin-top: 60px;
+}
+.second-section h1,
+.third-section h1,
+.fourth-section h1 {
+  font-size: var(--heading-size);
+  text-align: center;
+  color: var(--dark-text-color);
+  text-shadow: 3px 3px 10px var(--second-color);
+}
+.second-section .content {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.second-section .content .details {
+  width: 100%;
+  padding: 10px;
+  text-align: justify;
+  line-height: 30px;
+}
+.second-section .details p .topic {
+  font-weight: bold;
+  font-size: 16px;
+}
+.second-section .content iframe {
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  margin: 5px 0;
+}
+.second-section .content .plantation-image {
+  width: 100%;
+  text-align: center;
+}
+.second-section .content .plantation-image img {
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  margin: 5px 0;
+}
+.third-section .plantations {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.third-section .plantations .plantation {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  border-radius: 15px;
+  border: 5px solid var(--first-color);
+}
+.third-section .plantations .plantation img {
+  width: 100%;
+  height: 175px;
+  border-radius: 15px;
+}
+.third-section .plantations .plantation h3 {
+  margin: 5px 0;
+  font-size: var(--sub-heading-size);
+  color: var(--dark-text-color);
+  text-align: center;
+}
+.third-section a {
+  text-decoration: none;
+  color: var(--light-text-color);
+  font-size: var(--text-size);
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background: rgba(20, 63, 23, 0.6);
+}
+.third-section a:hover {
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 10px var(--light-text-color);
+  transition: 0.5s;
+}
+.table-section {
+  margin: 0 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid var(--dark-text-color);
+  background: #fff;
+}
+table caption {
+  font-size: var(--sub-heading-size);
+  text-shadow: 3px 3px 10px var(--second-color);
+  font-weight: bold;
+}
+thead,
+tfoot {
+  text-align: center;
+  font-weight: bold;
+  background: var(--first-color);
+  color: var(--light-text-color);
+}
+tr {
+  border-bottom: 2px solid var(--dark-text-color);
+  padding: 0;
+}
+tbody tr img {
+  width: 75px;
+}
+th,
+td {
+  padding: 10px;
+}
+tbody tr td:nth-of-type(3) {
+  text-align: justify;
+}
+tr:nth-child(even) td {
+  background-color: rgba(50, 205, 50, .6); 
+}
+tfoot a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  transition: 0.5s;
+}
+tfoot a:hover {
+  color: var(--second-color);
+  text-decoration: underline;
+}
+@media only screen and (min-width: 650px) {
+  :root {
+    --heading-size: 40px;
+    --sub-heading-size: 22px;
+    --text-size: 14px;
+  }
+  .second-section .content iframe {
+    height: 200px;
+  }
+  .second-section .content .plantation-image img {
+    width: 50%;
+  }
+  .third-section .plantations .plantation {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  :root {
+    --heading-size: 40px;
+    --sub-heading-size: 24px;
+    --text-size: 16px;
+  }
+  .second-section .content .details {
+    width: 65%;
+  }
+  .second-section .content:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  .second-section .content iframe {
+    height: auto;
+  }
+  .second-section .content .plantation-image {
+    width: 30%;
+  }
+  .second-section .content .plantation-image img {
+    width: 100%;
+  }
+  .third-section .plantations .plantation {
+    width: 30%;
+  }
+}
+
+/* Table responsive */
+@media screen and (max-width: 640px) {
+  table{
+    border: 0;
+    background: transparent;
+  }
+  thead, th {
+    display: none;
+  }
+  tr, td {
+    display: block;
+  }
+  tr {
+    border: 1px solid rgb(0, 0 , 0);
+    margin-bottom: 2rem;
+  }
+  tr:last-child {
+    margin-bottom: 0;
+  }
+  tbody tr:nth-child(odd) td {
+    background-color: #FFF; 
+  }
+  tbody td {
+    clear: both;
+    text-align: right;
+  }
+  tbody td:before {
+    content: attr(data-label)': ';
+    float: left;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+}
