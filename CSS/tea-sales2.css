@@ -49,6 +49,7 @@
 }
 .second-section .products .product img {
   width: 100%;
+  /* height: 175px; */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }

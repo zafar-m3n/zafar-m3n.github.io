@@ -50,38 +50,43 @@
         <br />
 
         <div class="form-section">
-          <form class="donate-form">
-            <ul class="form">
-              <li class="form-item">
-                <label for="amount">Amount</label>
-                <div class="prefixed-input">
-                  <div class="input-prefix">USD</div>
-                  <input type="text" name="amount" placeholder="XX.XX" required=""/>
+          <div class="card-form">
+            <form class="deposit">
+              <div class="form-indicator"></div>
+              <div class="form-body">
+                <div class="row">
+                  <h1>Donate to the Sri Lankan Tea Industry</h2>
                 </div>
-                <li class="form-item-group">
-                  <ul class="horizontal-fields">
-                    <li class="form-item"> 
-                      <label for="fName">First Name</label>
-                      <input type="text" name="fName" placeholder="First Name" required=""/>
-                    </li>
-                    <li class="form-item"> 
-                      <label for="lName">Last Name</label>
-                      <input type="text" name="lName" placeholder="Last Name" required=""/>
-                    </li>
-                  </ul>
-                </li>
-              </li>
-              <li class="form-item">
-                <label for="email">Email (optional)</label>
-                <div class="input-wrapper">
-                  <input type="email" name="email" placeholder="abc@example.com"/>
+                <div class="row">
+                  <p id="donation"></p>
                 </div>
-              </li>
-              <li class="form-item buttons">
-                <input type="submit" value="Donate"/>
-              </li>
-            </ul>
-          </form>
+                <div class="row">
+                  <div class="form-block">
+                    <div class="button" id="1" onclick="setValue(this)">LKR 100</div>
+                    <div class="button" id="2" onclick="setValue(this)">LKR 500</div>
+                    <div class="button" id="3" onclick="setValue(this)">LKR 1000</div>
+                    <div class="button" id="4" onclick="setValue(this)">LKR 2000</div>
+                    <div class="button" id="5" onclick="setValue(this)">LKR 5000</div>
+                    <div class="button" id="6" onclick="setValue(this)">LKR 10000</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="text" id="name" placeholder="Name on card">
+                </div>
+                <div class="row">
+                  <input type="text" id="address" placeholder="Address">
+                </div>
+                <div class="row">
+                  <input type="text" id="cc" maxlength="16" placeholder="Credit card number">
+                  <input type="month" id="date" min="2023-01">
+                  <input type="text" id="cvc" maxlength="4" placeholder="CVC">
+                </div>
+              </div>
+              <div class="form-footer">
+                <div class="btn" onclick="validate(this)">Donate</button>
+                </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -147,5 +152,6 @@
       <!-- References
       Ceylon Stores. (n.d.). Shop. [online] Available at: https://ceylonstores.lk/shop/. -->
   </footer>
+  <script src="Scripts/donate.js"></script>
   </body>
 </html>

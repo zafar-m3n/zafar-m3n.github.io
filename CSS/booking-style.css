@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(180deg, rgb(20,63,23),rgba(20,63,23,0.65), rgba(30,28,24,0.49)),url(../Images/Ceylon-Tea-Museum-1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+}
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  /* background: red; */
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  justify-content: center;
+}
+
+.booking-content {
+  color: #e0e0e0;
+  border: 5px solid #32CD32;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  height: fit-content;
+}
+
+.booking-content h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Bebas Neue", cursive;
+}
+
+.booking-form {
+  border: 5px solid #32CD32;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.booking-form h2,
+.booking-form label,
+.booking-form h3,
+.booking-form .guest-type {
+  font-family: "Bebas Neue", cursive;
+  color: #e0e0e0;
+  margin: 10px 0px;
+}
+.booking-form .input-group {
+  margin: 10px 0;
+}
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #32CD32;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.booking-form .guest-tickets{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+}
+.booking-form .guest-tickets input{
+  width: 250px;
+}
+.booking-form .guest-tickets button{
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 1px solid #32CD32;
+}
+.booking-form .order-buttons .btn-style:hover,
+.booking-form .save-buttons .btn-style:hover,
+.booking-form .guest-tickets button{
+  cursor: pointer;
+}
+.booking-form .inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.booking-form .order-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 10px 0;
+}
+.booking-form .save-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 10px 0;
+}
+.booking-form .order-buttons .btn-style,
+.booking-form .save-buttons .btn-style{
+  height: 35px;
+  background: #32CD32;
+  color: #e0e0e0;
+  border-radius: 5px;
+  border: 1px solid #32CD32;
+  font-family: 'Poppins', sans-serif;
+  transition: 1s all;
+}
+.booking-form .order-buttons .btn-style:hover,
+.booking-form .save-buttons .btn-style:hover{
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 10px #e0e0e0;
+}
+.booking-content table{
+  width: 100%;
+  border-collapse: collapse;
+  background: #e0e0e0;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #32CD32;
+}
+.booking-content table td{
+  border: 1px solid #32CD32;
+}
+
