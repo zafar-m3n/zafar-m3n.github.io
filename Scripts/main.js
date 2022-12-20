@@ -179,15 +179,13 @@ function placeOrder() {
   let date = document.getElementById("date").value;
   let currentOrder = orders[orders.length - 1];
 
-  if (
-    currentOrder.SLAdults != 0 &&
-    currentOrder.SLChlidren != 0 &&
-    currentOrder.FAdults != 0 &&
-    currentOrder.FChildren != 0 &&
-    currentOrder.infants != 0 &&
-    currentOrder.tourDuration != 0 &&
-    currentOrder.tourPrice != 0
-  ) {
+  let totalTickets =
+    parseInt(currentOrder.SLAdults) +
+    parseInt(currentOrder.SLChlidren) +
+    parseInt(currentOrder.FAdults) +
+    parseInt(currentOrder.FChildren) +
+    parseInt(currentOrder.infants);
+  if (totalTickets >= 1) {
     alert(
       "Order successfully placed." +
         "\nCustomer name: " +
@@ -234,15 +232,13 @@ function addOrder(obj) {
 }
 function addToFavourite() {
   let orderToSave = orders[orders.length - 1];
-  if (
-    orderToSave.SLAdults != 0 &&
-    orderToSave.SLChlidren != 0 &&
-    orderToSave.FAdults != 0 &&
-    orderToSave.FChildren != 0 &&
-    orderToSave.infants != 0 &&
-    orderToSave.tourDuration != 0 &&
-    orderToSave.tourPrice != 0
-  ) {
+  let totalTickets =
+    orderToSave.SLAdults +
+    orderToSave.SLChlidren +
+    orderToSave.FAdults +
+    orderToSave.FChildren +
+    orderToSave.infants;
+  if (totalTickets >= 1) {
     localStorage.removeItem("favouriteOrder");
     localStorage.setItem("favouriteOrder", JSON.stringify(orderToSave));
     alert("Order was added to favourites");
@@ -259,13 +255,13 @@ function orderFavourite() {
   let numOfInfants = document.getElementById("infantTicket");
 
   let favOrder = JSON.parse(localStorage.getItem("favouriteOrder"));
-  if (
-    favOrder.SLAdults != 0 &&
-    favOrder.SLChlidren != 0 &&
-    favOrder.FAdults != 0 &&
-    favOrder.FChildren != 0 &&
-    favOrder.infants != 0 &&
-    favOrder.tourDuration != 0
+  let totalTickets = favOrder.SLAdults +
+  favOrder.SLChlidren +
+  favOrder.FAdults +
+  favOrder.FChildren +
+  favOrder.infants;
+  if (totalTickets >= 1
+    
   ) {
     numOfSlAdults.value = favOrder.SLAdults;
     numOfSlChildren.value = favOrder.SLChlidren;
